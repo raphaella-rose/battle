@@ -19,6 +19,7 @@ require File.join(File.dirname(__FILE__), '..', 'app.rb')
 require 'rspec'
 require 'capybara'
 require 'capybara/rspec'
+require 'features/web_helpers.rb'
 
 Capybara.app = Battle
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
