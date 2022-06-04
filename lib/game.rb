@@ -21,15 +21,18 @@ class Game
     @current_turn
   end
 
+
   def switch_turns
     return @current_turn = opponent_of(current_turn)
   end
 
-  private 
-
   def opponent_of(the_player)
-    return player_2 if the_player == player_1
-    return player_1 if the_player == player_2
+   @players.select { |player| player != the_player }.first
+    # @opponent = player_2 if the_player == player_1
+    # @opponent = player_1 if the_player == player_2
+    # return @opponent 
   end
+
+  
   
 end

@@ -1,7 +1,7 @@
 class Player
   def initialize(name)
     @name = name
-    @points = 100
+    @points = 60
   end
 
   def name()
@@ -17,6 +17,6 @@ class Player
   end
 
   def receive_damage()
-    @points -= 20
+    @points -= 10
   end
 end

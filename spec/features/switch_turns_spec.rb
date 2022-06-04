@@ -8,7 +8,7 @@ feature 'Switch turns' do
     scenario 'after player 1 attacks' do
       sign_in_and_play()
       click_link 'attack'
-      click_link 'Next Round'
+      click_button 'Next Round'
       expect(page).to have_content "Daniel's turn"
     end
   end
