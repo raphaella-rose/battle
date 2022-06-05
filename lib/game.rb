@@ -21,18 +21,16 @@ class Game
     @current_turn
   end
 
-
   def switch_turns
     return @current_turn = opponent_of(current_turn)
   end
 
   def opponent_of(the_player)
    @players.select { |player| player != the_player }.first
-    # @opponent = player_2 if the_player == player_1
-    # @opponent = player_1 if the_player == player_2
-    # return @opponent 
   end
 
+  private
+  attr_reader :players
   
   
 end
